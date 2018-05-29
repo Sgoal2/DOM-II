@@ -77,10 +77,16 @@ nav[3].addEventListener("click", ()=>{
 nav[3].addEventListener("mouseleave", ()=>{
   nav[3].innerHTML = "Vision";
 })
+nav[4].addEventListener("dblclick", ()=>{
+  nav[4].innerHTML = "Double";
+})
 
 
 let ctaH1 = document.querySelector(".cta-text h1");
 ctaH1.innerHTML = "Dom<br> Is<br> Awesome"
+ctaH1.addEventListener("mouseover", ()=>{
+  ctaH1.style.color = "yellow";
+})
 
 let button = document.querySelector("button");
 button.innerHTML = "Get Started"
@@ -94,6 +100,7 @@ imgmid.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 let featuresH4 = document.querySelectorAll(".main-content .top-content h4");
 featuresH4[0].innerHTML = "Features";
 featuresH4[1].innerHTML = "About";
+
 
 let toptext = document.querySelectorAll(".main-content .top-content p");
 toptext[0].innerHTML = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
@@ -119,3 +126,6 @@ contactp[2].innerHTML = "sales@greatidea.io"
 
 let footer = document.querySelector("footer p");
 footer.innerHTML = "Copyright Great Idea! 2018"
+footer.addEventListener("mousemove", ()=>{
+footer.style.color = "red";
+})
